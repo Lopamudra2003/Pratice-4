@@ -10,8 +10,8 @@
 // let parahs = document.getElementsByTagName("p");
 // console.dir("parahs");
 
-// let element = document.querySelector("p");
-// console.dir(element);
+let element = document.querySelector("p");
+console.dir(element);
 
 let firstEl = document.querySelector(".myClass");
 console.dir(firstEl);
