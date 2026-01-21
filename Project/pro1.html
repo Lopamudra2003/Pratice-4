@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Melo Feedback Form</title>
+    <link rel="stylesheet" href="pro1.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Melo Feedback</h2>
+
+        <form id="feedbackForm"
+            action="https://docs.google.com/forms/d/e/1FAIpQLScV5JnZltTEdQvUo0wG8ln_maeCHynMO6KLuTo5lc9yqRgaeA/formResponse"
+            method="POST" target="hidden_iframe">
+
+            <label>Name</label>
+            <input type="text" id="name" name="entry.1564597964" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="text" id="email" name="entry.1963473186" placeholder="Enter your email" required>
+
+            <div id="emailError" class="error"></div>
+
+            <!-- Star Rating -->
+            <label>Rating</label>
+            <div class="stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+            <input type="hidden" id="rating" name="entry.985417630" required>
+            <div id="ratingError" class="error"></div>
+
+            <label>Feedback</label>
+            <textarea id="feedback" name="entry.755505946" rows="4" required></textarea>
+
+            
+            <button type="submit">Submit Feedback</button>
+            <div id="successMessage" class="success"></div>
+
+        </form>
+    </div>
+
+    <script src="pro1.js"></script>
+
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+</body>
+
+</html>
